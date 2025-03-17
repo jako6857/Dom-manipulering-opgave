@@ -55,10 +55,9 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 eller bruge qurySelectorAll og foreach til at loope.
 */
 
-let myElement = document.querySelector(".purpleFigures");
-let myArray = Array.from(".purpleFigures");
-myArray.map((elements) => {
-  myElement.style.backgroundColor = "red";
+purpleFigures = document.querySelectorAll(".purpleFigures");
+purpleFigures.forEach((element) => {
+  element.style.backgroundColor = "red";
 });
 
 // din kode her
@@ -67,6 +66,10 @@ myArray.map((elements) => {
 Brug din array til at ændre h3 elementets, inden i purpleFigures, tekst til RED. du kan bruge
 myElement.children[0].innerHTML til at ændre 1. child elements inner html.
 */
+
+purpleFigures.forEach((element) => {
+  element.children[0].innerHTML = "RED";
+});
 
 // din kode her
 
