@@ -84,5 +84,18 @@ const myData = {
   image: "assets/img/standard_tiger.jpg",
   description: "En tiger er et stort, katteagtig rovdyr med orange og sort striber i pelsen og skarpe tænder og kløer.",
 };
+let opgaveFour = document.getElementById("opgaveFour");
+let figure = document.createElement("figure");
+let img = document.createElement("img");
+let header = document.createElement("h2");
+header.innerHTML = myData.name;
+opgaveFour.appendChild(header);
+
+let figcaption = document.createElement("figcaption");
+figcaption.innerHTML = myData.description;
+figure.appendChild(img);
+figure.appendChild(figcaption);
+opgaveFour.appendChild(figure);
+img.src = myData.image;
 
 // din kode her
